@@ -12,6 +12,7 @@ import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
 import Page1 from "../components/page1";
+import DesignFeatures from "../components/design-features";
 const WebsiteDesign: NextPage = () => {
   return (
      <>
@@ -26,6 +27,7 @@ const WebsiteDesign: NextPage = () => {
          <Root1/>
 <Frame2461 />
 <Root2 />
+<DesignFeatures />
 <Root3 />
 <Referanslarmz />
 <MesajGnder />
