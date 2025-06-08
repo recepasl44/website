@@ -12,6 +12,7 @@ import Root3 from "./root3/root3";
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
+import DestekMerkezi from "../components/DestekMerkezi";
 import { useState } from "react";
 const WebsiteDesign: NextPage = () => {
   const [showDestek, setShowDestek] = useState(false);
@@ -31,7 +32,9 @@ const WebsiteDesign: NextPage = () => {
       <Root3 />
       <Referanslarmz />
       <MesajGnder />
-   
+
+      {showDestek && <DestekMerkezi />}
+
       <Footer />
     </>
   );

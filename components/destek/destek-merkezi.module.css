@@ -1,0 +1,122 @@
+.butonlar {
+  height: 72.438rem;
+  width: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-10);
+}
+.butonScroll {
+  height: 45.875rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.blankLine {
+  margin: 0;
+}
+.canlDestek {
+  font-family: var(--font-poppins);
+}
+.canlDestekKullanclarnA {
+  margin: 0;
+  font-size: inherit;
+  padding-left: 1.35rem;
+}
+.destekMerkeziEbtexContainer {
+  width: 82.75rem;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.anaFrame,
+.erik {
+  border-radius: var(--br-10);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.erik {
+  height: 43.688rem;
+  border: 2px solid var(--color-aliceblue);
+  padding: var(--padding-15) 1.437rem;
+}
+.anaFrame {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--color-white);
+  padding: 1.562rem 2.812rem 0;
+  gap: 2.187rem;
+}
+.frame {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.destekMerkeziInner,
+.frame,
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-15);
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: var(--font-poppins);
+}
+.destekMerkeziInner {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-20) 0 1.312rem;
+  box-sizing: border-box;
+}
+.destekMerkezi {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 3.125rem;
+  box-sizing: border-box;
+  gap: 3.125rem;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1650px) {
+  .anaFrame {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .anaFrame {
+    padding-left: var(--padding-22);
+    padding-right: var(--padding-22);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .anaFrame {
+    gap: 1.063rem;
+  }
+  .destekMerkezi {
+    gap: 1.563rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .destekMerkeziEbtexContainer {
+    font-size: var(--font-size-16);
+  }
+}

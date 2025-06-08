@@ -26,4 +26,52 @@ body {
   [class*="min-w-\\["] {
     min-width: 0 !important;
   }
+:root {
+  /* Color */
+  --color-lightslategray: #6e829f;
+  --color-whitesmoke: #f9fafc;
+  --color-darkslategray: #27313c;
+  --color-aliceblue: #e6eff3;
+  --color-mediumslateblue-400: rgba(92, 103, 247, 0.15);
+  --color-mediumslateblue-300: #5561eb;
+  --color-mediumslateblue-200: #5c67f7;
+  --color-mediumslateblue-100: #5d68f2;
+  --color-salmon-200: rgba(255, 142, 111, 0.15);
+  --color-salmon-100: #ff8e6f;
+  --color-darkorchid-200: rgba(158, 92, 247, 0.15);
+  --color-darkorchid-100: #9e5cf7;
+  --color-white: #fff;
+
+  /* Gap */
+  --gap-10: 0.625rem;
+  --gap-15: 0.937rem;
+  --gap-5: 0.312rem;
+  --gap-20: 1.25rem;
+
+  /* Padding */
+  --padding-10: 0.625rem;
+  --padding-22: 1.375rem;
+  --padding-8: 0.5rem;
+  --padding-40: 2.5rem;
+  --padding-5: 0.312rem;
+  --padding-19: 1.187rem;
+  --padding-32: 2rem;
+  --padding-12: 0.75rem;
+  --padding-15: 0.937rem;
+  --padding-20: 1.25rem;
+
+  /* BorderRadius */
+  --br-5: 5px;
+  --br-10: 10px;
+
+  /* Font */
+  --font-poppins: Poppins;
+
+  /* FontSize */
+  --font-size-15: 0.937rem;
+  --font-size-36: 2.25rem;
+  --font-size-18: 1.125rem;
+  --font-size-22: 1.375rem;
+  --font-size-16: 1rem;
+  --font-size-24: 1.5rem;
 }
