@@ -30,7 +30,6 @@ const WebsiteDesign: NextPage = () => {
 <Root3 />
 <Referanslarmz />
 <MesajGnder />
-<Page1 />
 <Footer />
     </>
   );

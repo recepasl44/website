@@ -16,3 +16,14 @@ body {
     border-width: 0;
   }
 }
+@media screen and (max-width: 450px) {
+  [class*="w-\\["] {
+    width: 100% !important;
+  }
+  [class*="max-w-\\["] {
+    max-width: 100% !important;
+  }
+  [class*="min-w-\\["] {
+    min-width: 0 !important;
+  }
+}
