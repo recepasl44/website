@@ -9,7 +9,7 @@ export type HeaderType = {
 const Header: NextPage<HeaderType> = ({ className = "" }) => {
   return (
     <div
-      className={`h-20 w-[1920px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-[#fff] flex flex-row items-start justify-start !pt-[19px] !pb-[19px] !pl-[75px] !pr-[75px] box-border gap-[286px] text-left text-base text-[#27313c] font-[Poppins] ${className}`}
+      className={`h-20 w-full max-w-[1920px] mx-auto shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-[#fff] flex flex-row items-start justify-start !pt-[19px] !pb-[19px] !pl-[75px] !pr-[75px] box-border gap-[286px] text-left text-base text-[#27313c] font-[Poppins] ${className}`}
     >
       <div className="flex flex-row items-center justify-start gap-[5px]">
         <Image
