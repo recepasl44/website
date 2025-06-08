@@ -14,90 +14,48 @@ const Soru1: NextPage<Soru1Type> = ({ className = "", property1 = 0 }) => {
       className={`w-[48.75rem] flex flex-col items-center justify-center gap-[0.625rem] text-left text-[0.938rem] text-[#27313c] font-[Poppins] ${className}`}
       data-property1={property1}
     >
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          7.  Ebtex diğer sistemlerle entegre olabilir mi?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          8.  Ebtex güvenli mi, bilgilerim kaybolur mu?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          9. Kullanıcıların sistemdeki yetkileri kontrol edilebilir mi?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          10.  Çok şubeli kurumlarda tüm şubeleri yönetebilir miyim?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          11.  Ebtex’i mobil cihazlarda kullanabilir miyim?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
-      <div className="self-stretch h-[3.125rem] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden shrink-0 flex flex-row items-center justify-between !pt-[1.062rem] !pb-[1.062rem] !pl-[1.562rem] !pr-[1.562rem] gap-[0rem]">
-        <div className="relative font-medium">
-          12. Ebtex’in diğer eğitim yazılımlarından farkı nedir?
-        </div>
-        <Image
-          className="h-[2.063rem] w-[2.063rem] relative rounded-[1.031rem]"
-          loading="lazy"
-          width={33}
-          height={33}
-          sizes="100vw"
-          alt=""
-          src="/ekle2.svg"
-        />
-      </div>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">7.  Ebtex diğer sistemlerle entegre olabilir mi?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">8.  Ebtex güvenli mi, bilgilerim kaybolur mu?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">9. Kullanıcıların sistemdeki yetkileri kontrol edilebilir mi?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">10.  Çok şubeli kurumlarda tüm şubeleri yönetebilir miyim?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">11.  Ebtex’i mobil cihazlarda kullanabilir miyim?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
+      <details className="self-stretch rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border overflow-hidden">
+        <summary className="flex flex-row items-center justify-between gap-0 cursor-pointer !p-[1.062rem_1.562rem] list-none">
+          <span className="font-medium">12. Ebtex’in diğer eğitim yazılımlarından farkı nedir?</span>
+          <Image className="h-[2.063rem] w-[2.063rem]" width={33} height={33} alt="" src="/ekle2.svg" />
+        </summary>
+        <p className="p-2 text-[0.813rem]">Cevap yakında.</p>
+      </details>
     </section>
   );
 };
