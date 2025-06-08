@@ -9,6 +9,7 @@ import Website1 from "../components/website1";
 import Frame2461 from "../components/frame246";
 import Root2 from "../components/root2";
 import Root3 from "./root3/root3";
+import DestekMerkezi from "../components/destek-merkezi";
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
@@ -16,6 +17,9 @@ import DestekMerkezi from "../components/DestekMerkezi";
 import { useState } from "react";
 const WebsiteDesign: NextPage = () => {
   const [showDestek, setShowDestek] = useState(false);
+  if (showDestek) {
+    return <DestekMerkezi onBack={() => setShowDestek(false)} />;
+  }
   return (
     <>
       <GrmeNavbarOn />
