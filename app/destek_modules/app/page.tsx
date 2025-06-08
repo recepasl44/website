@@ -1,4 +1,4 @@
-import DestekMerkezi from "./destek-merkezi";
+import DestekMerkezi from "../../../components/DestekMerkezi";
 
 export default function Page() {
   return <DestekMerkezi />;
