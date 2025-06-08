@@ -11,6 +11,7 @@ export type FrameComponent21Type = {
   yoklamaYnetim?: string;
   group533: string;
   burslulukYnetim?: string;
+  onModuleClick?: () => void;
 };
 
 const FrameComponent21: NextPage<FrameComponent21Type> = ({
@@ -21,15 +22,19 @@ const FrameComponent21: NextPage<FrameComponent21Type> = ({
   devTakip,
   group532,
   yoklamaYnetim,
-  
+
   group533,
   burslulukYnetim,
+  onModuleClick,
 }) => {
   return (
     <section
       className={`self-stretch flex-1 flex flex-row items-center justify-center gap-5 max-w-full text-center text-base text-[#27313c] font-[Poppins] ${className}`}
     >
-      <div className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full">
+      <div
+        className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full cursor-pointer"
+        onClick={onModuleClick}
+      >
         <Image
           className="w-[4.5rem] h-[4.5rem] relative"
           loading="lazy"
@@ -41,7 +46,10 @@ const FrameComponent21: NextPage<FrameComponent21Type> = ({
         />
         <div className="relative font-semibold">{soruHavuzu}</div>
       </div>
-      <div className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full">
+      <div
+        className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full cursor-pointer"
+        onClick={onModuleClick}
+      >
         <Image
           className="w-[4.5rem] h-[4.5rem] relative"
           loading="lazy"
@@ -53,7 +61,10 @@ const FrameComponent21: NextPage<FrameComponent21Type> = ({
         />
         <div className="relative font-semibold">{devTakip}</div>
       </div>
-      <div className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full">
+      <div
+        className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full cursor-pointer"
+        onClick={onModuleClick}
+      >
         <Image
           className="w-[4.5rem] h-[4.5rem] relative"
           loading="lazy"
@@ -65,7 +76,10 @@ const FrameComponent21: NextPage<FrameComponent21Type> = ({
         />
         <div className="relative font-semibold">{yoklamaYnetim}</div>
       </div>
-      <div className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full">
+      <div
+        className="h-[10.25rem] w-[25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.125rem] box-border overflow-hidden shrink-0 flex flex-col items-center justify-center !p-2.5 gap-2.5 max-w-full cursor-pointer"
+        onClick={onModuleClick}
+      >
         <Image
           className="w-[4.5rem] h-[4.5rem] relative"
           loading="lazy"

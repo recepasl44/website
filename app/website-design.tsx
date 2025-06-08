@@ -7,30 +7,44 @@ import Website from "../components/website";
 import Website1 from "../components/website1";
 import Frame2461 from "../components/frame246";
 import Root2 from "../components/root2";
-import Root3 from "./root3/root3"
+import Root3 from "./root3/root3";
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
 import DestekMerkezi from "../components/destek-merkezi";
+import { useState } from "react";
 const WebsiteDesign: NextPage = () => {
+  const [showDestek, setShowDestek] = useState(false);
   return (
-     <>
-    <GrmeNavbarOn />
-    <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
-      <Component1 />
-    
-    </div>
-     <Root />
-     <Website />
-   <Website1 />
-         <Root1/>
-<Frame2461 />
-<Root2 />
-<Root3 />
-<Referanslarmz />
-<MesajGnder />
-<DestekMerkezi />
-<Footer />
+    <>
+      <GrmeNavbarOn />
+      <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
+        <Component1 />
+
+      </div>
+      <Root />
+      <Website />
+      <Website1 onModuleClick={() => setShowDestek(true)} />
+      <Root1 />
+      <Frame2461 />
+      <Root2 />
+      <Root3 />
+      <Referanslarmz />
+      <MesajGnder />
+      {showDestek && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 overflow-auto">
+          <div className="relative w-full max-w-[90%] max-h-screen overflow-y-auto">
+            <button
+              className="absolute top-2 right-2 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center"
+              onClick={() => setShowDestek(false)}
+            >
+              X
+            </button>
+            <DestekMerkezi />
+          </div>
+        </div>
+      )}
+      <Footer />
     </>
   );
 };
