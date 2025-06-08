@@ -32,6 +32,7 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
       <main className="flex flex-col items-start justify-start gap-[1.875rem] max-w-full text-left text-[0.938rem] text-[#fff] font-[Poppins]">
         <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-2.5 max-w-full">
           <FrameComponent21
+            className="mq450:flex-col"
             group53="/group-53.svg"
             soruHavuzu="Soru Havuzu"
             group531="/group-53-1.svg"
@@ -42,6 +43,7 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
             burslulukYnetim="Bursluluk Yönetim"
           />
           <FrameComponent21
+            className="mq450:flex-col"
             group53="/group-53-4.svg"
             soruHavuzu="Sınav Analiz"
             group531="/group-53-5.svg"
@@ -52,6 +54,7 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
             burslulukYnetim="Finans ve Muhasebe"
           />
           <FrameComponent21
+            className="mq450:flex-col"
             group53="/group-53-8.svg"
             soruHavuzu="Ders Defteri"
             group531="/group-53-9.svg"

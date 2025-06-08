@@ -12,7 +12,7 @@ const ContentContainer: NextPage<ContentContainerType> = ({
 }) => {
   return (
     <main
-      className={`self-stretch flex flex-row items-center justify-center gap-[1.875rem] z-[1] ${className}`}
+      className={`self-stretch flex flex-row items-center justify-center gap-[1.875rem] z-[1] mq450:flex-col ${className}`}
     >
       <section className="h-[19.438rem] flex-[0.9113] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] overflow-hidden flex flex-row items-start justify-start !pt-[2.781rem] !pb-[2.781rem] !pl-16 !pr-16 box-border min-w-[26.188rem] text-left text-2xl text-[#000] font-[Poppins] mq450:flex-1">
         <div className="flex flex-col items-center justify-start gap-[1.875rem]">

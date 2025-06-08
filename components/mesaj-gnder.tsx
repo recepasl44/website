@@ -9,7 +9,7 @@ export type MesajGnderType = {
 const MesajGnder: NextPage<MesajGnderType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[60.25rem] shadow-[0px_4px_4px_3px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border max-w-full overflow-hidden flex flex-row items-center justify-center !pt-[1.125rem] !pb-[1.125rem] !pl-[2.438rem] !pr-[2.438rem] gap-5 leading-[normal] tracking-[normal] text-center text-2xl text-[#27313c] font-[Poppins] ${className}`}
+      className={`w-[60.25rem] shadow-[0px_4px_4px_3px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] border-[#e6eff3] border-solid border-[0.063rem] box-border max-w-full overflow-hidden flex flex-row items-center justify-center !pt-[1.125rem] !pb-[1.125rem] !pl-[2.438rem] !pr-[2.438rem] gap-5 leading-[normal] tracking-[normal] text-center text-2xl text-[#27313c] font-[Poppins] mx-auto ${className}`}
     >
       <Bilgiler />
       <div className="flex flex-col items-center justify-center flex-1 gap-5">

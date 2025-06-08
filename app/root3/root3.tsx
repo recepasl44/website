@@ -19,7 +19,7 @@ const Root3: NextPage = () => {
           </div>
         </div>
       </div>
-      <main className="w-[101rem] flex flex-row items-start justify-center gap-[3.437rem] max-w-full">
+      <main className="w-[101rem] flex flex-row items-start justify-center gap-[3.437rem] max-w-full mq450:flex-col">
         <Soru property1={0} />
         <Soru1 property1={0} />
       </main>

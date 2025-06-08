@@ -9,7 +9,7 @@ export type FrameComponentType = {
 const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
   return (
     <div
-      className={`absolute top-[12.5rem] left-[6.25rem] w-[53.75rem] h-[50rem] flex flex-col items-start justify-start !pt-[0rem] !pb-[25rem] !pl-[0rem] !pr-[0rem] box-border gap-[5.312rem] max-w-full text-left text-[3rem] text-[#cdcffa] font-[Poppins] ${className}`}
+      className={`absolute top-[12.5rem] left-[6.25rem] w-[53.75rem] h-[50rem] flex flex-col items-start justify-start !pt-[0rem] !pb-[25rem] !pl-[0rem] !pr-[0rem] box-border gap-[5.312rem] max-w-full text-left text-[3rem] text-[#cdcffa] font-[Poppins] mq450:static mq450:p-5 ${className}`}
     >
       <div className="flex flex-col items-start justify-start !pt-[0rem] !pb-[0rem] !pl-[0rem] !pr-[1.25rem] box-border gap-[0.375rem] shrink-0 max-w-full">
         <h1 className="!m-0 relative text-[length:inherit] font-semibold font-[inherit] inline-block max-w-full z-[2] mq450:text-[2.375rem]">
