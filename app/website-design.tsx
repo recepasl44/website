@@ -11,6 +11,7 @@ import Root3 from "./root3/root3"
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
+import Page1 from "../components/page1";
 const WebsiteDesign: NextPage = () => {
   return (
      <>
@@ -28,6 +29,7 @@ const WebsiteDesign: NextPage = () => {
 <Root3 />
 <Referanslarmz />
 <MesajGnder />
+<Page1 />
 <Footer />
     </>
   );

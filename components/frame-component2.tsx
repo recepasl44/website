@@ -21,6 +21,7 @@ const FrameComponent21: NextPage<FrameComponent21Type> = ({
   devTakip,
   group532,
   yoklamaYnetim,
+  
   group533,
   burslulukYnetim,
 }) => {
