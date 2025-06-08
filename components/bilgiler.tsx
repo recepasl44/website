@@ -8,13 +8,13 @@ export type BilgilerType = {
 const Bilgiler: NextPage<BilgilerType> = ({ className = "" }) => {
   return (
     <div
-      className={`h-[421.5px] rounded-tl-[10px] rounded-tr-none rounded-br-none rounded-bl-[10px] bg-[#5c67f7] max-w-full flex flex-col items-center justify-start !pt-5 !pb-5 !pl-10 !pr-10 box-border gap-5 leading-[normal] tracking-[normal] text-center text-2xl text-[#fff] font-[Poppins] ${className}`}
+      className={`h-[26.344rem] rounded-tl-[0.625rem] rounded-tr-none rounded-br-none rounded-bl-[0.625rem] bg-[#5c67f7] max-w-full flex flex-col items-center justify-start !pt-5 !pb-5 !pl-10 !pr-10 box-border gap-5 leading-[normal] tracking-[normal] text-center text-2xl text-[#fff] font-[Poppins] ${className}`}
     >
       <h3 className="!m-0 relative text-[length:inherit] font-medium font-[inherit]">
         İletişim Bilgilerimiz
       </h3>
-      <section className="w-[345px] flex flex-col items-start justify-start gap-[15px] text-right text-[13px] text-[#fff] font-[Poppins]">
-        <div className="flex flex-row items-center justify-start gap-[5px]">
+      <section className="w-[21.563rem] flex flex-col items-start justify-start gap-[0.938rem] text-right text-[0.813rem] text-[#fff] font-[Poppins]">
+        <div className="flex flex-row items-center justify-start gap-[0.313rem]">
           <Image
             className="w-6 relative max-h-full overflow-hidden shrink-0"
             loading="lazy"
@@ -29,7 +29,7 @@ const Bilgiler: NextPage<BilgilerType> = ({ className = "" }) => {
             <span> Kurumun Açık Adresi (şehir / semt dahil)</span>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-start gap-[5px]">
+        <div className="flex flex-row items-center justify-start gap-[0.313rem]">
           <Image
             className="w-6 relative max-h-full overflow-hidden shrink-0"
             loading="lazy"
@@ -44,7 +44,7 @@ const Bilgiler: NextPage<BilgilerType> = ({ className = "" }) => {
             <span> +90 5xx xxx xx xx</span>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-start gap-[5px]">
+        <div className="flex flex-row items-center justify-start gap-[0.313rem]">
           <Image
             className="w-6 relative max-h-full overflow-hidden shrink-0"
             loading="lazy"
@@ -59,7 +59,7 @@ const Bilgiler: NextPage<BilgilerType> = ({ className = "" }) => {
             <span> info@kurumadi.com</span>
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-center justify-start gap-[5px]">
+        <div className="self-stretch flex flex-row items-center justify-start gap-[0.313rem]">
           <Image
             className="w-6 relative max-h-full overflow-hidden shrink-0"
             loading="lazy"

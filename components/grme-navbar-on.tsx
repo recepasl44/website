@@ -8,10 +8,10 @@ export type GrmeNavbarOnType = {
 const GrmeNavbarOn: NextPage<GrmeNavbarOnType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-full max-w-[1920px] mx-auto h-20 flex flex-row items-start justify-start ${className}`}
+      className={`w-full max-w-[120rem] mx-auto h-20 flex flex-row items-start justify-start ${className}`}
     >
-      <section className="h-20 w-full max-w-[1920px] flex flex-row items-start justify-start">
-        <div className="h-20 w-full max-w-[1920px] flex flex-row items-start justify-start">
+      <section className="h-20 w-full max-w-[120rem] flex flex-row items-start justify-start">
+        <div className="h-20 w-full max-w-[120rem] flex flex-row items-start justify-start">
           <Header />
         </div>
       </section>

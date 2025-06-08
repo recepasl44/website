@@ -7,7 +7,7 @@ const Root3: NextPage = () => {
     <div className="w-full relative bg-[#f9fafc] overflow-hidden flex flex-col items-center justify-start !pt-[4.375rem] !pb-[4.375rem] !pl-[1.25rem] !pr-[1.25rem] box-border gap-[1.875rem] leading-[normal] tracking-[normal] text-center text-[1rem] text-[#5c67f7] font-[Poppins]">
       <div className="w-[41.688rem] flex flex-col items-center justify-start gap-[1.25rem]">
         <div className="flex flex-col items-center justify-center">
-          <div className="self-stretch relative border-[#5c67f7] border-solid border-t-[2px] box-border h-[0.125rem]" />
+          <div className="self-stretch relative border-[#5c67f7] border-solid border-t-[0.125rem] box-border h-[0.125rem]" />
           <div className="relative font-semibold">SSS’ler</div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[0.625rem] text-[1.5rem] text-[#27313c]">

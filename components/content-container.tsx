@@ -12,13 +12,13 @@ const ContentContainer: NextPage<ContentContainerType> = ({
 }) => {
   return (
     <main
-      className={`self-stretch flex flex-row items-center justify-center gap-[30px] z-[1] ${className}`}
+      className={`self-stretch flex flex-row items-center justify-center gap-[1.875rem] z-[1] ${className}`}
     >
-      <section className="h-[311px] flex-[0.9113] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[10px] bg-[#fff] overflow-hidden flex flex-row items-start justify-start !pt-[44.5px] !pb-[44.5px] !pl-16 !pr-16 box-border min-w-[419px] text-left text-2xl text-[#000] font-[Poppins] mq450:flex-1">
-        <div className="flex flex-col items-center justify-start gap-[30px]">
+      <section className="h-[19.438rem] flex-[0.9113] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] overflow-hidden flex flex-row items-start justify-start !pt-[2.781rem] !pb-[2.781rem] !pl-16 !pr-16 box-border min-w-[26.188rem] text-left text-2xl text-[#000] font-[Poppins] mq450:flex-1">
+        <div className="flex flex-col items-center justify-start gap-[1.875rem]">
           <div className="self-stretch flex flex-col items-center justify-start gap-5">
             <Image
-              className="w-[47px] h-[47px] relative rounded-[122.5px]"
+              className="w-[2.938rem] h-[2.938rem] relative rounded-[7.656rem]"
               loading="lazy"
               width={47}
               height={47}
@@ -26,11 +26,11 @@ const ContentContainer: NextPage<ContentContainerType> = ({
               alt=""
               src="/planlanan-devler.svg"
             />
-            <div className="flex flex-col items-center justify-start gap-[5px]">
-              <h3 className="!m-0 relative text-[length:inherit] font-semibold font-[inherit] mq450:text-[19px]">
+            <div className="flex flex-col items-center justify-start gap-[0.313rem]">
+              <h3 className="!m-0 relative text-[length:inherit] font-semibold font-[inherit] mq450:text-[1.188rem]">
                 Tüm Süreçler Tek Platformda
               </h3>
-              <div className="relative text-[15px] text-[#6e829f] text-center">
+              <div className="relative text-[0.938rem] text-[#6e829f] text-center">
                 <p className="!m-0">
                   Eğitim süreçlerinizi hızlandırarak zamandan ve maliyetten
                 </p>
@@ -39,7 +39,7 @@ const ContentContainer: NextPage<ContentContainerType> = ({
             </div>
           </div>
           <Button
-            className="!pt-[7.5px] !pb-[7.5px] !pl-[15px] !pr-[15px]"
+            className="!pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]"
             disableElevation
             color="primary"
             variant="outlined"

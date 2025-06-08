@@ -8,28 +8,28 @@ export type Website1Type = {
 const Website1: NextPage<Website1Type> = ({ className = "" }) => {
   return (
     <div
-      className={`w-full max-w-[1920px] mx-auto h-[861px] bg-[#f9fafc] overflow-hidden flex flex-col items-center justify-start !pt-[70px] !pb-[70px] !pl-5 !pr-5 box-border gap-[50px] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
+      className={`w-full max-w-[120rem] mx-auto h-[53.813rem] bg-[#f9fafc] overflow-hidden flex flex-col items-center justify-start !pt-[4.375rem] !pb-[4.375rem] !pl-5 !pr-5 box-border gap-[3.125rem] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
     >
-      <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[543px] !pr-[543px] box-border max-w-full mq450:!pl-5 mq450:!pr-5 mq450:box-border">
+      <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[33.938rem] !pr-[33.938rem] box-border max-w-full mq450:!pl-5 mq450:!pr-5 mq450:box-border">
         <div className="self-stretch flex flex-col items-start justify-start gap-2.5 max-w-full">
-          <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[234px] !pr-[234px] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
+          <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[14.625rem] !pr-[14.625rem] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
             <div className="h-6 flex flex-col items-center justify-center">
-              <div className="self-stretch relative border-[#5c67f7] border-solid border-t-[2px] box-border h-0.5" />
+              <div className="self-stretch relative border-[#5c67f7] border-solid border-t-[0.125rem] box-border h-0.5" />
               <div className="relative font-semibold">Modüllerimiz</div>
             </div>
           </div>
           <div className="flex-1 flex flex-col items-center justify-start max-w-full text-2xl text-[#27313c]">
-            <h3 className="!m-0 flex-1 relative text-[length:inherit] font-medium font-[inherit] mq450:text-[19px]">
+            <h3 className="!m-0 flex-1 relative text-[length:inherit] font-medium font-[inherit] mq450:text-[1.188rem]">
               EBTEX: Eğitim Kurumları İçin Kapsamlı Çözümler
             </h3>
-            <div className="w-[520px] relative text-sm font-medium text-[#6e829f] inline-block">
+            <div className="w-[32.5rem] relative text-sm font-medium text-[#6e829f] inline-block">
               Tüm eğitim süreçlerinizi kolayca yönetin, başarıyı artırın ve
               optimize edin
             </div>
           </div>
         </div>
       </div>
-      <main className="flex flex-col items-start justify-start gap-[30px] max-w-full text-left text-[15px] text-[#fff] font-[Poppins]">
+      <main className="flex flex-col items-start justify-start gap-[1.875rem] max-w-full text-left text-[0.938rem] text-[#fff] font-[Poppins]">
         <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-2.5 max-w-full">
           <FrameComponent21
             group53="/group-53.svg"
@@ -62,8 +62,8 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
             burslulukYnetim="Rehberlik Takip"
           />
         </div>
-        <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[734px] !pr-[734px] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
-          <div className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[7.5px] !pb-[7.5px] !pl-[15px] !pr-[15px]">
+        <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[45.875rem] !pr-[45.875rem] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
+          <div className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]">
             <div className="relative font-semibold">Tüm Modülleri Keşfet</div>
           </div>
         </div>

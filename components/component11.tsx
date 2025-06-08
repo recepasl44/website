@@ -27,7 +27,7 @@ const Component11: NextPage<Component11Type> = ({
 
   return (
     <div
-      className={`w-[173px] rounded-md bg-[rgba(158,92,247,0.15)] overflow-hidden shrink-0 flex flex-row items-center justify-center !p-2.5 box-border text-left text-[15px] text-[#9e5cf7] font-[Poppins] data-[property1='static']:bg-[#9e5cf7] data-[property1='static']:[&_.text]:text-[#fff] ${className}`}
+      className={`w-[10.813rem] rounded-md bg-[rgba(158,92,247,0.15)] overflow-hidden shrink-0 flex flex-row items-center justify-center !p-2.5 box-border text-left text-[0.938rem] text-[#9e5cf7] font-[Poppins] data-[property1='static']:bg-[#9e5cf7] data-[property1='static']:[&_.text]:text-[#fff] ${className}`}
       data-property1={property1}
       style={component1Style}
     >
