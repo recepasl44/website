@@ -1,12 +1,20 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 import FrameComponent21 from "./frame-component2";
 
 export type Website1Type = {
   className?: string;
-  onModuleClick?: () => void;
 };
 
-const Website1: NextPage<Website1Type> = ({ className = "", onModuleClick }) => {
+const Website1: NextPage<Website1Type> = ({ className = "" }) => {
+  const [iframeOpen, setIframeOpen] = useState(false);
+
+  const handleModuleClick = () => {
+    setIframeOpen(true);
+  };
+
+  const closeIframe = () => setIframeOpen(false);
+
   return (
     <div
       className={`w-full max-w-[120rem] mx-auto h-[53.813rem] bg-[#f9fafc] overflow-hidden flex flex-col items-center justify-start !pt-[4.375rem] !pb-[4.375rem] !pl-5 !pr-5 box-border gap-[3.125rem] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
@@ -42,7 +50,7 @@ const Website1: NextPage<Website1Type> = ({ className = "", onModuleClick }) => 
             yoklamaYnetim="Yoklama Yönetim"
             group533="/group-53-3.svg"
             burslulukYnetim="Bursluluk Yönetim"
-            onModuleClick={onModuleClick}
+            onModuleClick={handleModuleClick}
           />
           <FrameComponent21
             className="mq450:flex-col"
@@ -54,7 +62,7 @@ const Website1: NextPage<Website1Type> = ({ className = "", onModuleClick }) => 
             yoklamaYnetim="Servis Ulaşım"
             group533="/group-53-7.svg"
             burslulukYnetim="Finans ve Muhasebe"
-            onModuleClick={onModuleClick}
+            onModuleClick={handleModuleClick}
           />
           <FrameComponent21
             className="mq450:flex-col"
@@ -66,7 +74,7 @@ const Website1: NextPage<Website1Type> = ({ className = "", onModuleClick }) => 
             yoklamaYnetim="Etkinlik Yönetimi"
             group533="/group-53-11.svg"
             burslulukYnetim="Rehberlik Takip"
-            onModuleClick={onModuleClick}
+            onModuleClick={handleModuleClick}
           />
         </div>
         <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[45.875rem] !pr-[45.875rem] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
@@ -75,6 +83,19 @@ const Website1: NextPage<Website1Type> = ({ className = "", onModuleClick }) => 
           </div>
         </div>
       </main>
+      {iframeOpen && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+          <div className="relative w-11/12 h-5/6 bg-white rounded-md overflow-hidden">
+            <button
+              className="absolute top-2 right-2 z-10 text-black bg-white rounded-full px-2"
+              onClick={closeIframe}
+            >
+              X
+            </button>
+            <iframe src="/destek_modules/app" className="w-full h-full border-0" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

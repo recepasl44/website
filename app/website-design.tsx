@@ -12,13 +12,8 @@ import Root3 from "./root3/root3";
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
-import DestekMerkezi from "../components/DestekMerkezi";
-import { useState } from "react";
+
 const WebsiteDesign: NextPage = () => {
-  const [showDestek, setShowDestek] = useState(false);
-  if (showDestek) {
-    return <DestekMerkezi onBack={() => setShowDestek(false)} />;
-  }
   return (
     <>
       <GrmeNavbarOn />
@@ -28,15 +23,13 @@ const WebsiteDesign: NextPage = () => {
       </div>
       <Root />
       <Website />
-      <Website1 onModuleClick={() => setShowDestek(true)} />
+      <Website1 />
       <Root1 />
       <Frame2461 />
       <Root2 />
       <Root3 />
       <Referanslarmz />
       <MesajGnder />
-
-      {showDestek && <DestekMerkezi />}
 
       <Footer />
     </>
