@@ -8,7 +8,7 @@ export type FooterType = {
 const Footer: NextPage<FooterType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1920px] h-[551px] bg-[#192038] max-w-full overflow-hidden flex flex-col items-start justify-start !pt-[74px] !pb-[25px] !pl-[157px] !pr-[157px] box-border gap-[184px] text-left text-base font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[551px] bg-[#192038] overflow-hidden flex flex-col items-start justify-start !pt-[74px] !pb-[25px] !pl-[157px] !pr-[157px] box-border gap-[184px] text-left text-base font-[Poppins] ${className}`}
     >
       <section className="w-[1306px] h-[244px] flex flex-row items-start justify-start gap-[107px] text-left text-xl text-[#fff] font-[Poppins]">
         <div className="w-[459px] flex flex-col items-start justify-start gap-[21px] text-base text-[#a3a6af]">

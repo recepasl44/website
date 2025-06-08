@@ -8,7 +8,7 @@ export type Root1Type = {
 const Root1: NextPage<Root1Type> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1920px] h-[696px] bg-[#f9fafc] max-w-full overflow-hidden flex flex-col items-center justify-start !pt-[70px] !pb-[70px] !pl-5 !pr-5 box-border gap-[50px] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[696px] bg-[#f9fafc] overflow-hidden flex flex-col items-center justify-start !pt-[70px] !pb-[70px] !pl-5 !pr-5 box-border gap-[50px] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
     >
       <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[155px] !pr-[155px] box-border max-w-full">
         <div className="self-stretch flex flex-col items-end justify-start gap-2.5 max-w-full">

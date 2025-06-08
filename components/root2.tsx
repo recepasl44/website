@@ -13,7 +13,7 @@ export type Root2Type = {
 const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
   return (
     <div
-      className={`w-[1920px] h-[699px] bg-[#e9ecfb] max-w-full overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70px] !pl-[367px] !pr-[367px] box-border gap-10 text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[699px] bg-[#e9ecfb] overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70px] !pl-[367px] !pr-[367px] box-border gap-10 text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
       data-property1={property1}
     >
       <div className="w-[860px] h-[70px] flex flex-row items-start justify-end !pt-0 !pb-0 !pl-0 !pr-[324px] box-border">

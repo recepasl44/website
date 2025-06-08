@@ -9,7 +9,7 @@ export type ReferanslarmzType = {
 const Referanslarmz: NextPage<ReferanslarmzType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1920px] h-[574px] bg-[#5561eb] max-w-full overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70px] !pl-[126.6px] !pr-[126.6px] box-border relative gap-[30px] text-center text-base text-[#fff] font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[574px] bg-[#5561eb] overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70px] !pl-[126.6px] !pr-[126.6px] box-border relative gap-[30px] text-center text-base text-[#fff] font-[Poppins] ${className}`}
     >
       <main className="w-[1970px] h-[1266.3px] absolute !!m-[0 important] bottom-[-464px] left-[-40px] z-[0]">
         <div className="absolute top-[368.3px] left-[1716px] w-[29.5px] flex flex-col items-start justify-start gap-[85px]">

@@ -8,7 +8,7 @@ export type WebsiteType = {
 const Website: NextPage<WebsiteType> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1920px] h-[632px] bg-[#e9ecfb] max-w-full flex flex-col items-center justify-start !pt-[70px] !pb-[97px] !pl-5 !pr-[21px] box-border gap-[30px] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[632px] bg-[#e9ecfb] flex flex-col items-center justify-start !pt-[70px] !pb-[97px] !pl-5 !pr-[21px] box-border gap-[30px] leading-[normal] tracking-[normal] text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
     >
       <div className="flex flex-row items-start justify-end !pt-0 !pb-0 !pl-[367px] !pr-[365px] box-border max-w-full mq450:!pl-5 mq450:!pr-5 mq450:box-border">
         <div className="h-6 flex flex-col items-center justify-center">

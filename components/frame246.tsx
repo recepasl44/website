@@ -9,7 +9,7 @@ export type Frame2461Type = {
 const Frame2461: NextPage<Frame2461Type> = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1920px] h-[590px] bg-[#5561eb] max-w-full overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70.8px] !pl-[104px] !pr-[104px] box-border relative gap-[50px] text-center text-base text-[#fff] font-[Poppins] ${className}`}
+      className={`w-full max-w-[1920px] mx-auto h-[590px] bg-[#5561eb] overflow-hidden flex flex-col items-end justify-start !pt-[70px] !pb-[70.8px] !pl-[104px] !pr-[104px] box-border relative gap-[50px] text-center text-base text-[#fff] font-[Poppins] ${className}`}
     >
       <main className="w-[1970px] h-[1266.3px] absolute !!m-[0 important] bottom-[-448px] left-[-40px] z-[0]">
         <div className="absolute top-[368.3px] left-[1716px] w-[29.5px] flex flex-col items-start justify-start gap-[85px]">
