@@ -1,13 +1,7 @@
 import type { NextPage } from "next";
-import {
-  TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
-  Button,
-} from "@mui/material";
-import Image from "next/image";
+import { TextField, Button } from "@mui/material";
 import FrameComponent from "../../components/frame-component2";
+import ContactSection from "../../components/ContactSection";
 import styles from "./page.module.css";
 
 const Page: NextPage = () => {
@@ -23,73 +17,7 @@ const Page: NextPage = () => {
         bizimleLetiimeGeinDisplay="unset"
       />
       <main className={styles.frameParent}>
-        <section className={styles.bilgilerWrapper}>
-          <div className={styles.bilgiler}>
-            <h3 className={styles.letiimBilgilerimiz}>İletişim Bilgilerimiz</h3>
-            <div className={styles.addressInfo}>
-              <div className={styles.gridiconslocationParent}>
-                <Image
-                  className={styles.gridiconslocation}
-                  loading="lazy"
-                  width={24}
-                  height={24}
-                  sizes="100vw"
-                  alt=""
-                  src="/gridiconslocation.svg"
-                />
-                <div className={styles.adresKurumunAkContainer}>
-                  <span>Adres:</span>
-                  <span> Kurumun Açık Adresi (şehir / semt dahil)</span>
-                </div>
-              </div>
-              <div className={styles.gridiconslocationParent}>
-                <Image
-                  className={styles.gridiconslocation}
-                  loading="lazy"
-                  width={24}
-                  height={24}
-                  sizes="100vw"
-                  alt=""
-                  src="/icroundphone.svg"
-                />
-                <div className={styles.adresKurumunAkContainer}>
-                  <span>Telefon:</span>
-                  <span> +90 5xx xxx xx xx</span>
-                </div>
-              </div>
-              <div className={styles.gridiconslocationParent}>
-                <Image
-                  className={styles.gridiconslocation}
-                  loading="lazy"
-                  width={24}
-                  height={24}
-                  sizes="100vw"
-                  alt=""
-                  src="/fluentmail24filled.svg"
-                />
-                <div className={styles.adresKurumunAkContainer}>
-                  <span>E-Posta:</span>
-                  <span> info@kurumadi.com</span>
-                </div>
-              </div>
-              <div className={styles.tablerclockHour4FilledParent}>
-                <Image
-                  className={styles.gridiconslocation}
-                  loading="lazy"
-                  width={24}
-                  height={24}
-                  sizes="100vw"
-                  alt=""
-                  src="/tablerclockhour4filled.svg"
-                />
-                <div className={styles.adresKurumunAkContainer}>
-                  <span>Çalışma Saatleri:</span>
-                  <span> Pazartesi - Cuma, 09:00 - 18:00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactSection />
         <div className={styles.mesajGnder}>
           <h3 className={styles.letiimBilgilerimiz}>Mesaj Gönderin</h3>
           <section className={styles.bilgiler1}>
