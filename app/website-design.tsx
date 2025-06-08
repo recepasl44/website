@@ -27,7 +27,6 @@ const WebsiteDesign: NextPage = () => {
          <Root1/>
 <Frame2461 />
 <Root2 />
-<DesignFeatures />
 <Root3 />
 <Referanslarmz />
 <MesajGnder />
