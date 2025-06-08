@@ -32,13 +32,13 @@ const Kart11: NextPage<Kart11Type> = ({
 
   return (
     <section
-      className={`h-[311px] flex-1 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[10px] bg-[#fff] overflow-hidden flex flex-row items-start justify-start !pt-14 !pb-14 !pl-[43px] !pr-[43px] box-border min-w-[419px] text-left text-2xl text-[#000] font-[Poppins] ${className}`}
+      className={`h-[19.438rem] flex-1 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.625rem] bg-[#fff] overflow-hidden flex flex-row items-start justify-start !pt-14 !pb-14 !pl-[2.688rem] !pr-[2.688rem] box-border min-w-[26.188rem] text-left text-2xl text-[#000] font-[Poppins] ${className}`}
       style={kart02Style}
     >
-      <div className="flex flex-col items-center justify-start gap-[30px]">
+      <div className="flex flex-col items-center justify-start gap-[1.875rem]">
         <div className="self-stretch flex flex-col items-center justify-start gap-5">
           <Image
-            className="w-[47px] h-[47px] relative rounded-[122.5px]"
+            className="w-[2.938rem] h-[2.938rem] relative rounded-[7.656rem]"
             loading="lazy"
             width={47}
             height={47}
@@ -46,17 +46,17 @@ const Kart11: NextPage<Kart11Type> = ({
             alt=""
             src={planlananDevler}
           />
-          <div className="flex flex-col items-center justify-start gap-[5px]">
-            <h3 className="!m-0 relative text-[length:inherit] font-semibold font-[inherit] mq450:text-[19px]">
+          <div className="flex flex-col items-center justify-start gap-[0.313rem]">
+            <h3 className="!m-0 relative text-[length:inherit] font-semibold font-[inherit] mq450:text-[1.188rem]">
               {akllAnalizLlebilirBaar}
             </h3>
-            <div className="relative text-[15px] text-[#6e829f] text-center">
+            <div className="relative text-[0.938rem] text-[#6e829f] text-center">
               {herRencininBireyselIhtiyalar}
             </div>
           </div>
         </div>
         <Button
-          className="!pt-[7.5px] !pb-[7.5px] !pl-[15px] !pr-[15px]"
+          className="!pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]"
           disableElevation
           color="primary"
           variant="contained"
