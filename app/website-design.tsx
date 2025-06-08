@@ -1,3 +1,4 @@
+"use client";
 import type { NextPage } from "next";
 import Component1 from "../components/component1";
 import Root1 from "../components/root1";
@@ -11,7 +12,6 @@ import Root3 from "./root3/root3";
 import Referanslarmz from "../components/referanslarmz";
 import MesajGnder from "../components/mesaj-gnder";
 import Footer from "../components/footer";
-import DestekMerkezi from "../components/destek-merkezi";
 import { useState } from "react";
 const WebsiteDesign: NextPage = () => {
   const [showDestek, setShowDestek] = useState(false);
@@ -31,19 +31,7 @@ const WebsiteDesign: NextPage = () => {
       <Root3 />
       <Referanslarmz />
       <MesajGnder />
-      {showDestek && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 overflow-auto">
-          <div className="relative w-full max-w-[90%] max-h-screen overflow-y-auto">
-            <button
-              className="absolute top-2 right-2 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center"
-              onClick={() => setShowDestek(false)}
-            >
-              X
-            </button>
-            <DestekMerkezi />
-          </div>
-        </div>
-      )}
+   
       <Footer />
     </>
   );

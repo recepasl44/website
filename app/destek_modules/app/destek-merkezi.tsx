@@ -1,12 +1,396 @@
 "use client";
 import type { NextPage } from "next";
-import PrimaryNavButton from "../components/primary-nav-button";
+import Image from "next/image";
+import { useMemo, type CSSProperties } from "react";
+import headerStyles from "../components/header.module.css";
+import secondaryNavButtonStyles from "../components/secondary-nav-button.module.css";
+import frameComponentStyles from "../components/frame-component.module.css";
+import arkaplanStyles from "../components/arkaplan.module.css";
+import primaryNavButtonStyles from "../components/primary-nav-button.module.css";
+
+export type SecondaryNavButtonType = {
+  className?: string;
+  tEXT?: string;
+
+  /** Variant props */
+  property1?: string;
+};
+
+const SecondaryNavButton: NextPage<SecondaryNavButtonType> = ({
+  className = "",
+  property1 = "default",
+  tEXT,
+}) => {
+  return (
+    <button
+      className={[secondaryNavButtonStyles.secondaryNavButton, className].join(" ")}
+      data-property1={property1}
+    >
+      <div className={secondaryNavButtonStyles.text}>{tEXT}</div>
+    </button>
+  );
+};
+
+export type HeaderType = {
+  className?: string;
+};
+
+const Header: NextPage<HeaderType> = ({ className = "" }) => {
+  return (
+    <header className={[headerStyles.header, className].join(" ")}>
+      <div className={headerStyles.logoWrapper}>
+        <div className={headerStyles.logo}>
+          <Image
+            className={headerStyles.headerebtexMaviLogoIcon}
+            loading="lazy"
+            width={32}
+            height={32}
+            sizes="100vw"
+            alt=""
+            src="/headerebtexmavilogo.svg"
+          />
+          <Image
+            className={headerStyles.ebtexBeyazTextIcon}
+            loading="lazy"
+            width={90}
+            height={20}
+            sizes="100vw"
+            alt=""
+            src="/ebtexbeyaztext.svg"
+          />
+        </div>
+      </div>
+      <div className={headerStyles.navigationLinksWrapper}>
+        <div className={headerStyles.navigationLinks}>
+          <div className={headerStyles.anasayfa}>Anasayfa</div>
+          <div className={headerStyles.anasayfa}>Kurumsal</div>
+          <div className={headerStyles.anasayfa}>Çözümler</div>
+          <div className={headerStyles.anasayfa}>Ücretlendirme</div>
+          <div className={headerStyles.anasayfa}>Referanslarımız</div>
+          <div className={headerStyles.anasayfa}>SSS</div>
+          <div className={headerStyles.anasayfa}>Bize Ulaşın</div>
+        </div>
+      </div>
+      <div className={headerStyles.secondaryNav}>
+        <SecondaryNavButton property1="default" tEXT="Giriş" />
+        <SecondaryNavButton property1="default" tEXT="Demo" />
+      </div>
+    </header>
+  );
+};
+
+export type ArkaplanType = {
+  className?: string;
+};
+
+const Arkaplan: NextPage<ArkaplanType> = ({ className = "" }) => {
+  return (
+    <div className={[arkaplanStyles.arkaplan, className].join(" ")}>
+      <div className={arkaplanStyles.pattern}>
+        <div className={arkaplanStyles.x}>
+          <div className={arkaplanStyles.wrapperFrame244}>
+            <Image
+              className={arkaplanStyles.wrapperFrame244Child}
+              width={29.5}
+              height={29.5}
+              sizes="100vw"
+              alt=""
+              src="/frame-244.svg"
+            />
+          </div>
+          <div className={arkaplanStyles.wrapperFrame244}>
+            <Image
+              className={arkaplanStyles.wrapperFrame62Child}
+              loading="lazy"
+              width={29.5}
+              height={29.5}
+              sizes="100vw"
+              alt=""
+              src="/frame-244.svg"
+            />
+          </div>
+          <div className={arkaplanStyles.wrapperFrame244}>
+            <Image
+              className={arkaplanStyles.wrapperFrame245Child}
+              loading="lazy"
+              width={29.5}
+              height={29.5}
+              sizes="100vw"
+              alt=""
+              src="/frame-244.svg"
+            />
+          </div>
+          <div className={arkaplanStyles.wrapperFrame244}>
+            <Image
+              className={arkaplanStyles.wrapperFrame245Child}
+              loading="lazy"
+              width={29.5}
+              height={29.5}
+              sizes="100vw"
+              alt=""
+              src="/frame-244.svg"
+            />
+          </div>
+          <div className={arkaplanStyles.wrapperFrame244}>
+            <Image
+              className={arkaplanStyles.wrapperFrame245Child}
+              loading="lazy"
+              width={29.5}
+              height={29.5}
+              sizes="100vw"
+              alt=""
+              src="/frame-244.svg"
+            />
+          </div>
+        </div>
+        <Image
+          className={arkaplanStyles.patternChild}
+          width={233}
+          height={234.8}
+          sizes="100vw"
+          alt=""
+          src="/vector-12.svg"
+        />
+        <div className={arkaplanStyles.shapeContainersParent}>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+          <div className={arkaplanStyles.shapeContainers}>
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+            <div className={arkaplanStyles.shapeContainersChild} />
+          </div>
+        </div>
+        <Image
+          className={arkaplanStyles.patternItem}
+          width={351.4}
+          height={324.6}
+          sizes="100vw"
+          alt=""
+          src="/frame-62-1@2x.png"
+        />
+        <div className={arkaplanStyles.wrapperVector13}>
+          <Image
+            className={arkaplanStyles.wrapperVector13Child}
+            width={355.2}
+            height={355.2}
+            sizes="100vw"
+            alt=""
+            src="/vector-13.svg"
+          />
+        </div>
+        <Image
+          className={arkaplanStyles.patternInner}
+          width={603}
+          height={603}
+          sizes="100vw"
+          alt=""
+          src="/vector-15.svg"
+        />
+        <Image
+          className={arkaplanStyles.vectorIcon}
+          width={603}
+          height={603}
+          sizes="100vw"
+          alt=""
+          src="/vector-16.svg"
+        />
+        <div className={arkaplanStyles.patternChild1} />
+        <div className={arkaplanStyles.wrapperCircles}>
+          <Image
+            className={arkaplanStyles.circlesIcon}
+            width={438.8}
+            height={438.8}
+            sizes="100vw"
+            alt=""
+            src="/circles.svg"
+          />
+        </div>
+        <Image
+          className={arkaplanStyles.patternChild2}
+          width={257}
+          height={257}
+          sizes="100vw"
+          alt=""
+          src="/vector-19.svg"
+        />
+        <div className={arkaplanStyles.frameParent}>
+          <div className={arkaplanStyles.frameGroup}>
+            <div className={arkaplanStyles.overlayElementsWrapper}>
+              <div className={arkaplanStyles.overlayElements}>
+                <div className={arkaplanStyles.wrapperVector17}>
+                  <Image
+                    className={arkaplanStyles.wrapperVector17Child}
+                    width={71.5}
+                    height={71.5}
+                    sizes="100vw"
+                    alt=""
+                    src="/vector-17.svg"
+                  />
+                </div>
+                <div className={arkaplanStyles.wrapperVector17Wrapper}>
+                  <div className={arkaplanStyles.wrapperVector171}>
+                    <Image
+                      className={arkaplanStyles.wrapperVector17Item}
+                      width={241}
+                      height={241}
+                      sizes="100vw"
+                      alt=""
+                      src="/vector-17-1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={arkaplanStyles.wrapperVector18Wrapper}>
+              <div className={arkaplanStyles.wrapperVector18}>
+                <Image
+                  className={arkaplanStyles.wrapperVector18Child}
+                  width={432}
+                  height={381.5}
+                  sizes="100vw"
+                  alt=""
+                  src="/vector-18.svg"
+                />
+              </div>
+            </div>
+            <div className={arkaplanStyles.wrapperVector20}>
+              <Image
+                className={arkaplanStyles.wrapperVector20Child}
+                width={312}
+                height={312}
+                sizes="100vw"
+                alt=""
+                src="/vector-20.svg"
+              />
+            </div>
+          </div>
+          <div className={arkaplanStyles.wrapperVector14Wrapper}>
+            <div className={arkaplanStyles.wrapperVector14}>
+              <Image
+                className={arkaplanStyles.wrapperVector14Child}
+                loading="lazy"
+                width={534.7}
+                height={401}
+                sizes="100vw"
+                alt=""
+                src="/vector-14.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export type FrameComponentType = {
+  className?: string;
+};
+
+const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
+  return (
+    <section className={[frameComponentStyles.backButtonParent, className].join(" ")}>
+      <div className={frameComponentStyles.backButton}>
+        <Image
+          className={frameComponentStyles.okIcon}
+          loading="lazy"
+          width={17.7}
+          height={13.3}
+          sizes="100vw"
+          alt=""
+          src="/ok@2x.png"
+        />
+        <h3 className={frameComponentStyles.ebtexiKefeteGeri}>EBTEX’i Keşfet’e geri dön</h3>
+      </div>
+      <div className={frameComponentStyles.arkaplanParent}>
+        <Arkaplan />
+        <div className={frameComponentStyles.modllerimizWrapper}>
+          <h1 className={frameComponentStyles.modllerimiz}>Modüllerimiz</h1>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export type PrimaryNavButtonType = {
+  className?: string;
+  tEXT?: string;
+
+  /** Variant props */
+  property1?: "default" | "click";
+
+  /** Style props */
+  primaryNavButtonAlignSelf?: CSSProperties["alignSelf"];
+  primaryNavButtonWidth?: CSSProperties["width"];
+};
+
+const PrimaryNavButton: NextPage<PrimaryNavButtonType> = ({
+  className = "",
+  property1 = "default",
+  primaryNavButtonAlignSelf,
+  primaryNavButtonWidth,
+  tEXT,
+}) => {
+  const primaryNavButtonStyle: CSSProperties = useMemo(() => {
+    return {
+      alignSelf: primaryNavButtonAlignSelf,
+      width: primaryNavButtonWidth,
+    };
+  }, [primaryNavButtonAlignSelf, primaryNavButtonWidth]);
+
+  return (
+    <div
+      className={[primaryNavButtonStyles.root, className].join(" ")}
+      data-property1={property1}
+      style={primaryNavButtonStyle}
+    >
+      <div className={primaryNavButtonStyles.text}>{tEXT}</div>
+    </div>
+  );
+};
 
 const DestekMerkezi: NextPage = () => {
   return (
     <div className="destekMerkezi">
+      <Header />
       <main className="destekMerkeziInner">
         <section className="frameParent">
+          <FrameComponent />
           <div className="frame">
             <div className="anaFrame">
               <section className="butonScroll">
