@@ -26,6 +26,7 @@ body {
   [class*="min-w-\\["] {
     min-width: 0 !important;
   }
+}
 :root {
   /* Color */
   --color-lightslategray: #6e829f;
