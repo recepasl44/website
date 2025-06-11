@@ -2,7 +2,6 @@
 import type { NextPage } from "next";
 import FrameComponent from "./destek-modules/frame-component";
 import PrimaryNavButton from "./destek-modules/primary-nav-button";
-import Header from "./destek-modules/header";
 
 export type DestekMerkeziProps = {
   onBack?: () => void;
@@ -11,7 +10,6 @@ export type DestekMerkeziProps = {
 const DestekMerkezi: NextPage<DestekMerkeziProps> = ({ onBack }) => {
   return (
     <div className="destekMerkezi">
-      <Header />
       <main className="destekMerkeziInner">
         <section className="frameParent">
           <FrameComponent onBack={onBack} />

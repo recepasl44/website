@@ -1,6 +1,5 @@
 "use client";
 import type { NextPage } from "next";
-import Header from "./destek/header";
 import FrameComponent from "./destek/frame-component";
 import PrimaryNavButton from "./destek/primary-nav-button";
 import styles from "./destek/destek-merkezi.module.css";
@@ -8,7 +7,6 @@ import styles from "./destek/destek-merkezi.module.css";
 const DestekMerkezi: NextPage = () => {
   return (
     <div className={styles.destekMerkezi}>
-      <Header />
       <main className={styles.destekMerkeziInner}>
         <section className={styles.frameParent}>
           <FrameComponent />
