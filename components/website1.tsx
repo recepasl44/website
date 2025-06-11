@@ -38,64 +38,65 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <main className="flex flex-col items-start justify-start gap-[1.875rem] max-w-full text-left text-[0.938rem] text-[#fff] font-[Poppins]">
-        <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-2.5 max-w-full">
-          <FrameComponent21
-            className="mq450:flex-col"
-            group53="/group-53.svg"
-            soruHavuzu="Soru Havuzu"
-            group531="/group-53-1.svg"
-            devTakip="Ödev Takip"
-            group532="/group-53-2.svg"
-            yoklamaYnetim="Yoklama Yönetim"
-            group533="/group-53-3.svg"
-            burslulukYnetim="Bursluluk Yönetim"
-            onModuleClick={handleModuleClick}
-          />
-          <FrameComponent21
-            className="mq450:flex-col"
-            group53="/group-53-4.svg"
-            soruHavuzu="Sınav Analiz"
-            group531="/group-53-5.svg"
-            devTakip="Çevrimiçi Sınav"
-            group532="/group-53-6.svg"
-            yoklamaYnetim="Servis Ulaşım"
-            group533="/group-53-7.svg"
-            burslulukYnetim="Finans ve Muhasebe"
-            onModuleClick={handleModuleClick}
-          />
-          <FrameComponent21
-            className="mq450:flex-col"
-            group53="/group-53-8.svg"
-            soruHavuzu="Ders Defteri"
-            group531="/group-53-9.svg"
-            devTakip="Ders ve Nöbet Programı"
-            group532="/group-53-10.svg"
-            yoklamaYnetim="Etkinlik Yönetimi"
-            group533="/group-53-11.svg"
-            burslulukYnetim="Rehberlik Takip"
-            onModuleClick={handleModuleClick}
-          />
-        </div>
-        <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[45.875rem] !pr-[45.875rem] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
-          <div className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]">
-            <div className="relative font-semibold">Tüm Modülleri Keşfet</div>
-          </div>
-        </div>
-      </main>
-      {iframeOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
-          <div className="relative w-11/12 h-5/6 bg-white rounded-md overflow-hidden">
+      <main className="flex flex-col items-start justify-start gap-[1.875rem] max-w-full text-left text-[0.938rem] text-[#fff] font-[Poppins] w-full">
+        {iframeOpen ? (
+          <div className="flex flex-col items-start justify-start w-full h-full gap-2">
             <button
-              className="absolute top-2 right-2 z-10 text-black bg-white rounded-full px-2"
               onClick={closeIframe}
+              className="self-end mb-2 rounded-md bg-[#5c67f7] px-2 py-1 text-white"
             >
-              X
+              Geri
             </button>
-            <iframe src="/destek_modules/app" className="w-full h-full border-0" />
+            <iframe src="/destek_modules/app" className="w-full flex-1 border-0" />
           </div>
-        </div>
-      )}
+        ) : (
+          <>
+            <div className="self-stretch flex-1 flex flex-col items-start justify-start gap-2.5 max-w-full">
+              <FrameComponent21
+                className="mq450:flex-col"
+                group53="/group-53.svg"
+                soruHavuzu="Soru Havuzu"
+                group531="/group-53-1.svg"
+                devTakip="Ödev Takip"
+                group532="/group-53-2.svg"
+                yoklamaYnetim="Yoklama Yönetim"
+                group533="/group-53-3.svg"
+                burslulukYnetim="Bursluluk Yönetim"
+                onModuleClick={handleModuleClick}
+              />
+              <FrameComponent21
+                className="mq450:flex-col"
+                group53="/group-53-4.svg"
+                soruHavuzu="Sınav Analiz"
+                group531="/group-53-5.svg"
+                devTakip="Çevrimiçi Sınav"
+                group532="/group-53-6.svg"
+                yoklamaYnetim="Servis Ulaşım"
+                group533="/group-53-7.svg"
+                burslulukYnetim="Finans ve Muhasebe"
+                onModuleClick={handleModuleClick}
+              />
+              <FrameComponent21
+                className="mq450:flex-col"
+                group53="/group-53-8.svg"
+                soruHavuzu="Ders Defteri"
+                group531="/group-53-9.svg"
+                devTakip="Ders ve Nöbet Programı"
+                group532="/group-53-10.svg"
+                yoklamaYnetim="Etkinlik Yönetimi"
+                group533="/group-53-11.svg"
+                burslulukYnetim="Rehberlik Takip"
+                onModuleClick={handleModuleClick}
+              />
+            </div>
+            <div className="flex flex-row items-start justify-start !pt-0 !pb-0 !pl-[45.875rem] !pr-[45.875rem] mq450:!pl-5 mq450:!pr-5 mq450:box-border">
+              <div className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]">
+                <div className="relative font-semibold">Tüm Modülleri Keşfet</div>
+              </div>
+            </div>
+          </>
+        )}
+      </main>
     </div>
   );
 };
