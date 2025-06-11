@@ -37,14 +37,16 @@ body {
 /* Her bir kartın görünümü */
 .card {
   flex: 0 0 auto;               /* Genişlik sabit, esneme yok */
-  width: 320px;
-  height: 220px;
-  background: #fff;
-  border-radius: 8px;
+  width: 320px;                 /* Kart genişliği */
+  height: 220px;                /* Kart yüksekliği */
+  background: #fff;             /* Beyaz zemin */
+  border-radius: 8px;           /* Köşeleri yuvarla */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Hafif gölge */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   scroll-snap-align: center;    /* Kart ortalanarak hizalansın */
   transition: transform 0.35s ease-out;
 }

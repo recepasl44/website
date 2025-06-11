@@ -1,4 +1,4 @@
-// Slider elemanını seç
+// Kaydırma işlemleri için liste elemanını seçiyoruz
 const slider = document.getElementById('slider');
 
 // Sürükleme sırasında kullanılacak değişkenler
@@ -63,6 +63,7 @@ function endDrag() {
   snapToCard();
 }
 
+// Tüm bitiş durumlarında hizalamayı tetikle
 slider.addEventListener('pointerup', endDrag);
 slider.addEventListener('pointercancel', endDrag);
 slider.addEventListener('pointerleave', endDrag);
