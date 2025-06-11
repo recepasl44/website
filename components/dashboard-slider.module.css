@@ -1,0 +1,26 @@
+.sliderContainer {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+.slider {
+  display: flex;
+  gap: 1rem;
+  padding: 0 50%;
+  scroll-padding: 0 50%;
+}
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+@media (max-width: 768px) {
+  .slider {
+    padding: 0 5%;
+    scroll-padding: 0 5%;
+  }
+}
