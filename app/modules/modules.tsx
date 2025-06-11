@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import GrmeNavbarOn from '../../components/grme-navbar-on';
 
 const modules = [
   {
@@ -75,7 +74,6 @@ export default function ModulesPage() {
 
   return (
     <div className="w-full">
-      <GrmeNavbarOn />
       <div className="px-4 py-2 text-sm text-[#5c67f7]">
         <a href="#" className="hover:underline">← EBTEX'i keşfet e geri dön</a>
       </div>
