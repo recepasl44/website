@@ -39,8 +39,8 @@ const Website1: NextPage<Website1Type> = ({ className = "" }) => {
         </div>
       </div>
       <main className="flex flex-col items-start justify-start gap-[1.875rem] max-w-full text-left text-[0.938rem] text-[#fff] font-[Poppins] w-full">
-        {iframeOpen ? (
-          <div className="flex flex-col items-start justify-start w-full h-full gap-2">
+          {iframeOpen ? (
+            <div className="flex flex-col items-start justify-start w-full h-[1000px] gap-3">
             <button
               onClick={closeIframe}
               className="self-end mb-2 rounded-md bg-[#5c67f7] px-2 py-1 text-white"
