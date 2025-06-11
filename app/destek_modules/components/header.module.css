@@ -1,0 +1,88 @@
+.headerebtexMaviLogoIcon {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+}
+.ebtexBeyazTextIcon {
+  height: 1.25rem;
+  width: 5.625rem;
+  position: relative;
+}
+.logo,
+.logoWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.logo {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5);
+}
+.logoWrapper {
+  width: 15.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-5) 0 0;
+  box-sizing: border-box;
+}
+.anasayfa {
+  position: relative;
+  font-weight: 600;
+}
+.navigationLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-15);
+}
+.navigationLinksWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.562rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.header,
+.secondaryNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-10);
+}
+.header {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-19) 4.687rem;
+  box-sizing: border-box;
+  gap: var(--gap-20);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-16);
+  color: var(--color-darkslategray);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1300px) {
+  .navigationLinks {
+    display: none;
+  }
+  .header {
+    padding-left: 2.313rem;
+    padding-right: 2.313rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .secondaryNav {
+    display: none;
+  }
+}

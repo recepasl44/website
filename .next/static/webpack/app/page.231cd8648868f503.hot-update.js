@@ -1,0 +1,96 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./app/website-design.tsx":
+/*!********************************!*\
+  !*** ./app/website-design.tsx ***!
+  \********************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(app-pages-browser)/./node_modules/next/dist/compiled/react/jsx-dev-runtime.js\");\n/* harmony import */ var _components_component1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/component1 */ \"(app-pages-browser)/./components/component1.tsx\");\n/* harmony import */ var _components_root1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/root1 */ \"(app-pages-browser)/./components/root1.tsx\");\n/* harmony import */ var _components_grme_navbar_on__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/grme-navbar-on */ \"(app-pages-browser)/./components/grme-navbar-on.tsx\");\n/* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/root */ \"(app-pages-browser)/./components/root.tsx\");\n/* harmony import */ var _components_website__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/website */ \"(app-pages-browser)/./components/website.tsx\");\n/* harmony import */ var _components_website1__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/website1 */ \"(app-pages-browser)/./components/website1.tsx\");\n/* harmony import */ var _components_frame246__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/frame246 */ \"(app-pages-browser)/./components/frame246.tsx\");\n/* harmony import */ var _components_frame246__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_frame246__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _components_root2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/root2 */ \"(app-pages-browser)/./components/root2.tsx\");\n/* harmony import */ var _root3_root3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./root3/root3 */ \"(app-pages-browser)/./app/root3/root3.tsx\");\n/* harmony import */ var _components_referanslarmz__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/referanslarmz */ \"(app-pages-browser)/./components/referanslarmz.tsx\");\n/* harmony import */ var _components_mesaj_gnder__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/mesaj-gnder */ \"(app-pages-browser)/./components/mesaj-gnder.tsx\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/footer */ \"(app-pages-browser)/./components/footer.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\n\n\n\n\n\n\n\n\n\nconst WebsiteDesign = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_grme_navbar_on__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_component1__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {}, void 0, false, {\n                    fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                    lineNumber: 21,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 20,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_root__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 24,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_website__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 25,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_website1__WEBPACK_IMPORTED_MODULE_6__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 26,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_root1__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 27,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_components_frame246__WEBPACK_IMPORTED_MODULE_7___default()), {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 28,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_root2__WEBPACK_IMPORTED_MODULE_8__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 29,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_root3_root3__WEBPACK_IMPORTED_MODULE_9__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 30,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_referanslarmz__WEBPACK_IMPORTED_MODULE_10__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 31,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_mesaj_gnder__WEBPACK_IMPORTED_MODULE_11__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 32,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_footer__WEBPACK_IMPORTED_MODULE_12__[\"default\"], {}, void 0, false, {\n                fileName: \"D:\\\\website\\\\app\\\\website-design.tsx\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true);\n};\n_c = WebsiteDesign;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WebsiteDesign);\nvar _c;\n$RefreshReg$(_c, \"WebsiteDesign\");\n\n\n;\n    // Wrapped in an IIFE to avoid polluting the global scope\n    ;\n    (function () {\n        var _a, _b;\n        // Legacy CSS implementations will `eval` browser code in a Node.js context\n        // to extract CSS. For backwards compatibility, we need to check we're in a\n        // browser context before continuing.\n        if (typeof self !== 'undefined' &&\n            // AMP / No-JS mode does not inject these helpers:\n            '$RefreshHelpers$' in self) {\n            // @ts-ignore __webpack_module__ is global\n            var currentExports = module.exports;\n            // @ts-ignore __webpack_module__ is global\n            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;\n            // This cannot happen in MainTemplate because the exports mismatch between\n            // templating and execution.\n            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);\n            // A module can be accepted automatically based on its exports, e.g. when\n            // it is a Refresh Boundary.\n            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {\n                // Save the previous exports signature on update so we can compare the boundary\n                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)\n                module.hot.dispose(function (data) {\n                    data.prevSignature =\n                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);\n                });\n                // Unconditionally accept an update to this module, we'll check if it's\n                // still a Refresh Boundary later.\n                // @ts-ignore importMeta is replaced in the loader\n                module.hot.accept();\n                // This field is set when the previous version of this module was a\n                // Refresh Boundary, letting us know we need to check for invalidation or\n                // enqueue an update.\n                if (prevSignature !== null) {\n                    // A boundary can become ineligible if its exports are incompatible\n                    // with the previous exports.\n                    //\n                    // For example, if you add/remove/change exports, we'll want to\n                    // re-execute the importing modules, and force those components to\n                    // re-render. Similarly, if you convert a class component to a\n                    // function, we want to invalidate the boundary.\n                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {\n                        module.hot.invalidate();\n                    }\n                    else {\n                        self.$RefreshHelpers$.scheduleUpdate();\n                    }\n                }\n            }\n            else {\n                // Since we just executed the code for the module, it's possible that the\n                // new exports made it ineligible for being a boundary.\n                // We only care about the case when we were _previously_ a boundary,\n                // because we already accepted this update (accidental side effect).\n                var isNoLongerABoundary = prevSignature !== null;\n                if (isNoLongerABoundary) {\n                    module.hot.invalidate();\n                }\n            }\n        }\n    })();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL2FwcC93ZWJzaXRlLWRlc2lnbi50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUVrRDtBQUNWO0FBQ2dCO0FBQ2xCO0FBQ007QUFDRTtBQUNDO0FBQ1A7QUFDTjtBQUNzQjtBQUNMO0FBQ1Q7QUFFMUMsTUFBTVksZ0JBQTBCO0lBQzlCLHFCQUNFOzswQkFDRSw4REFBQ1Ysa0VBQVlBOzs7OzswQkFDYiw4REFBQ1c7Z0JBQUlDLFdBQVU7MEJBQ2IsNEVBQUNkLDhEQUFVQTs7Ozs7Ozs7OzswQkFHYiw4REFBQ0csd0RBQUlBOzs7OzswQkFDTCw4REFBQ0MsMkRBQU9BOzs7OzswQkFDUiw4REFBQ0MsNERBQVFBOzs7OzswQkFDVCw4REFBQ0oseURBQUtBOzs7OzswQkFDTiw4REFBQ0ssNkRBQVNBOzs7OzswQkFDViw4REFBQ0MseURBQUtBOzs7OzswQkFDTiw4REFBQ0Msb0RBQUtBOzs7OzswQkFDTiw4REFBQ0Msa0VBQWFBOzs7OzswQkFDZCw4REFBQ0MsZ0VBQVVBOzs7OzswQkFFWCw4REFBQ0MsMkRBQU1BOzs7Ozs7O0FBR2I7S0FyQk1DO0FBdUJOLGlFQUFlQSxhQUFhQSxFQUFDIiwic291cmNlcyI6WyJEOlxcd2Vic2l0ZVxcYXBwXFx3ZWJzaXRlLWRlc2lnbi50c3giXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCI7XHJcbmltcG9ydCB0eXBlIHsgTmV4dFBhZ2UgfSBmcm9tIFwibmV4dFwiO1xyXG5pbXBvcnQgQ29tcG9uZW50MSBmcm9tIFwiLi4vY29tcG9uZW50cy9jb21wb25lbnQxXCI7XHJcbmltcG9ydCBSb290MSBmcm9tIFwiLi4vY29tcG9uZW50cy9yb290MVwiO1xyXG5pbXBvcnQgR3JtZU5hdmJhck9uIGZyb20gXCIuLi9jb21wb25lbnRzL2dybWUtbmF2YmFyLW9uXCI7XHJcbmltcG9ydCBSb290IGZyb20gXCIuLi9jb21wb25lbnRzL3Jvb3RcIjtcclxuaW1wb3J0IFdlYnNpdGUgZnJvbSBcIi4uL2NvbXBvbmVudHMvd2Vic2l0ZVwiO1xyXG5pbXBvcnQgV2Vic2l0ZTEgZnJvbSBcIi4uL2NvbXBvbmVudHMvd2Vic2l0ZTFcIjtcclxuaW1wb3J0IEZyYW1lMjQ2MSBmcm9tIFwiLi4vY29tcG9uZW50cy9mcmFtZTI0NlwiO1xyXG5pbXBvcnQgUm9vdDIgZnJvbSBcIi4uL2NvbXBvbmVudHMvcm9vdDJcIjtcclxuaW1wb3J0IFJvb3QzIGZyb20gXCIuL3Jvb3QzL3Jvb3QzXCI7XHJcbmltcG9ydCBSZWZlcmFuc2xhcm16IGZyb20gXCIuLi9jb21wb25lbnRzL3JlZmVyYW5zbGFybXpcIjtcclxuaW1wb3J0IE1lc2FqR25kZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvbWVzYWotZ25kZXJcIjtcclxuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9mb290ZXJcIjtcclxuXHJcbmNvbnN0IFdlYnNpdGVEZXNpZ246IE5leHRQYWdlID0gKCkgPT4ge1xyXG4gIHJldHVybiAoXHJcbiAgICA8PlxyXG4gICAgICA8R3JtZU5hdmJhck9uIC8+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy1mdWxsIHJlbGF0aXZlIGZsZXggZmxleC1yb3cgaXRlbXMtc3RhcnQganVzdGlmeS1zdGFydCBsZWFkaW5nLVtub3JtYWxdIHRyYWNraW5nLVtub3JtYWxdXCI+XHJcbiAgICAgICAgPENvbXBvbmVudDEgLz5cclxuXHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8Um9vdCAvPlxyXG4gICAgICA8V2Vic2l0ZSAvPlxyXG4gICAgICA8V2Vic2l0ZTEgLz5cclxuICAgICAgPFJvb3QxIC8+XHJcbiAgICAgIDxGcmFtZTI0NjEgLz5cclxuICAgICAgPFJvb3QyIC8+XHJcbiAgICAgIDxSb290MyAvPlxyXG4gICAgICA8UmVmZXJhbnNsYXJteiAvPlxyXG4gICAgICA8TWVzYWpHbmRlciAvPlxyXG5cclxuICAgICAgPEZvb3RlciAvPlxyXG4gICAgPC8+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IFdlYnNpdGVEZXNpZ247XHJcbiJdLCJuYW1lcyI6WyJDb21wb25lbnQxIiwiUm9vdDEiLCJHcm1lTmF2YmFyT24iLCJSb290IiwiV2Vic2l0ZSIsIldlYnNpdGUxIiwiRnJhbWUyNDYxIiwiUm9vdDIiLCJSb290MyIsIlJlZmVyYW5zbGFybXoiLCJNZXNhakduZGVyIiwiRm9vdGVyIiwiV2Vic2l0ZURlc2lnbiIsImRpdiIsImNsYXNzTmFtZSJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./app/website-design.tsx\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./components/frame246.tsx":
+/*!*********************************!*\
+  !*** ./components/frame246.tsx ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+;
+    // Wrapped in an IIFE to avoid polluting the global scope
+    ;
+    (function () {
+        var _a, _b;
+        // Legacy CSS implementations will `eval` browser code in a Node.js context
+        // to extract CSS. For backwards compatibility, we need to check we're in a
+        // browser context before continuing.
+        if (typeof self !== 'undefined' &&
+            // AMP / No-JS mode does not inject these helpers:
+            '$RefreshHelpers$' in self) {
+            // @ts-ignore __webpack_module__ is global
+            var currentExports = module.exports;
+            // @ts-ignore __webpack_module__ is global
+            var prevSignature = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevSignature) !== null && _b !== void 0 ? _b : null;
+            // This cannot happen in MainTemplate because the exports mismatch between
+            // templating and execution.
+            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);
+            // A module can be accepted automatically based on its exports, e.g. when
+            // it is a Refresh Boundary.
+            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {
+                // Save the previous exports signature on update so we can compare the boundary
+                // signatures. We avoid saving exports themselves since it causes memory leaks (https://github.com/vercel/next.js/pull/53797)
+                module.hot.dispose(function (data) {
+                    data.prevSignature =
+                        self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports);
+                });
+                // Unconditionally accept an update to this module, we'll check if it's
+                // still a Refresh Boundary later.
+                // @ts-ignore importMeta is replaced in the loader
+                module.hot.accept();
+                // This field is set when the previous version of this module was a
+                // Refresh Boundary, letting us know we need to check for invalidation or
+                // enqueue an update.
+                if (prevSignature !== null) {
+                    // A boundary can become ineligible if its exports are incompatible
+                    // with the previous exports.
+                    //
+                    // For example, if you add/remove/change exports, we'll want to
+                    // re-execute the importing modules, and force those components to
+                    // re-render. Similarly, if you convert a class component to a
+                    // function, we want to invalidate the boundary.
+                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevSignature, self.$RefreshHelpers$.getRefreshBoundarySignature(currentExports))) {
+                        module.hot.invalidate();
+                    }
+                    else {
+                        self.$RefreshHelpers$.scheduleUpdate();
+                    }
+                }
+            }
+            else {
+                // Since we just executed the code for the module, it's possible that the
+                // new exports made it ineligible for being a boundary.
+                // We only care about the case when we were _previously_ a boundary,
+                // because we already accepted this update (accidental side effect).
+                var isNoLongerABoundary = prevSignature !== null;
+                if (isNoLongerABoundary) {
+                    module.hot.invalidate();
+                }
+            }
+        }
+    })();
+
+
+/***/ })
+
+});
