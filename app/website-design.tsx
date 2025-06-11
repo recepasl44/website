@@ -17,19 +17,33 @@ const WebsiteDesign: NextPage = () => {
   return (
     <>
       <GrmeNavbarOn />
-      <div className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
+      <section id="anasayfa" className="w-full relative flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
         <Component1 />
 
-      </div>
-      <Root />
-      <Website />
-      <Website1 />
-      <Root1 />
-      <Frame2461 />
-      <Root2 />
-      <Root3 />
-      <Referanslarmz />
-      <MesajGnder />
+      </section>
+      <section id="kurumsal">
+        <Root />
+      </section>
+      <section id="cozumler">
+        <Website />
+        <Website1 />
+        <Root1 />
+      </section>
+      <section id="kullanici-merkezi">
+        <Frame2461 />
+      </section>
+      <section id="ucretlendirme">
+        <Root2 />
+      </section>
+      <section id="sss">
+        <Root3 />
+      </section>
+      <section id="referanslar">
+        <Referanslarmz />
+      </section>
+      <section id="iletisim">
+        <MesajGnder />
+      </section>
 
       <Footer />
     </>

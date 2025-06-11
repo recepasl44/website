@@ -1,10 +1,11 @@
-import type { NextPage } from "next";
+"use client";
+import type { FC } from "react";
 
 export type FrameComponent1Type = {
   className?: string;
 };
 
-const FrameComponent1: NextPage<FrameComponent1Type> = ({ className = "" }) => {
+const FrameComponent1: FC<FrameComponent1Type> = ({ className = "" }) => {
   return (
     <div
       className={`h-[24.125rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[1.875rem] bg-[#fff] overflow-hidden flex flex-col items-start justify-start !pt-[1.688rem] !pb-[1.688rem] !pl-[1.813rem] !pr-[1.813rem] box-border gap-[1.563rem] text-left text-[2rem] text-[#27313c] font-[Poppins] ${className}`}
@@ -31,9 +32,9 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({ className = "" }) => {
         </div>
       </div>
       <div className="w-[30.938rem] h-[2.375rem] flex flex-col items-end justify-center text-[0.938rem] text-[#fff]">
-        <div className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]">
+        <button className="rounded-md bg-[#5c67f7] flex flex-row items-center justify-center !pt-[0.469rem] !pb-[0.469rem] !pl-[0.938rem] !pr-[0.938rem]">
           <div className="relative font-semibold">Satın Al</div>
-        </div>
+        </button>
       </div>
     </div>
   );

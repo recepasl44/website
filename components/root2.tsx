@@ -1,4 +1,5 @@
-import type { NextPage } from "next";
+"use client";
+import type { FC } from "react";
 import Image from "next/image";
 import Component11 from "./component11";
 import FrameComponent1 from "./frame-component1";
@@ -10,7 +11,7 @@ export type Root2Type = {
   property1?: 10;
 };
 
-const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
+const Root2: FC<Root2Type> = ({ className = "", property1 = 10 }) => {
   return (
     <div
       className={`w-full max-w-[120rem] mx-auto h-[43.688rem] bg-[#e9ecfb] overflow-hidden flex flex-col items-end justify-start !pt-[4.375rem] !pb-[4.375rem] !pl-[22.938rem] !pr-[22.938rem] box-border gap-10 text-center text-base text-[#5c67f7] font-[Poppins] ${className}`}
@@ -62,9 +63,11 @@ const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
                       Anaokulu Öğrenci Sayısı
                     </div>
                   </div>
-                  <div className="h-10 rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pt-0 !pb-0 !pl-2.5 !pr-2.5 box-border text-[#686f77]">
-                    <div className="relative">Öğrenci Sayısı Giriniz</div>
-                  </div>
+                  <input
+                    type="number"
+                    placeholder="Öğrenci Sayısı Giriniz"
+                    className="h-10 rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pl-2.5 !pr-2.5 box-border text-[#686f77]"
+                  />
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-between gap-0 text-left">
                   <div className="w-[15.563rem] flex flex-row items-center justify-start gap-[0.563rem]">
@@ -81,9 +84,11 @@ const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
                       İlkokul Öğrenci Sayısı
                     </div>
                   </div>
-                  <div className="h-10 rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pt-0 !pb-0 !pl-2.5 !pr-2.5 box-border text-right text-[#686f77]">
-                    <div className="relative">Öğrenci Sayısı Giriniz</div>
-                  </div>
+                  <input
+                    type="number"
+                    placeholder="Öğrenci Sayısı Giriniz"
+                    className="h-10 rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pl-2.5 !pr-2.5 box-border text-right text-[#686f77]"
+                  />
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-between gap-0">
                   <div className="w-[15.563rem] flex flex-row items-center justify-start gap-[0.563rem]">
@@ -100,9 +105,11 @@ const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
                       Ortaokul Öğrenci Sayısı
                     </div>
                   </div>
-                  <div className="h-10 w-[9.813rem] rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pt-0 !pb-0 !pl-2.5 !pr-2.5 box-border text-[0.938rem] text-[#27313c]">
-                    <div className="relative">100</div>
-                  </div>
+                  <input
+                    type="number"
+                    defaultValue={100}
+                    className="h-10 w-[9.813rem] rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pl-2.5 !pr-2.5 box-border text-[0.938rem] text-[#27313c]"
+                  />
                 </div>
                 <div className="self-stretch flex flex-row items-center justify-between gap-0 text-left">
                   <div className="w-[15.563rem] flex flex-row items-center justify-start gap-[0.563rem]">
@@ -119,9 +126,11 @@ const Root2: NextPage<Root2Type> = ({ className = "", property1 = 10 }) => {
                       Lise Öğrenci Sayısı
                     </div>
                   </div>
-                  <div className="h-10 w-[9.813rem] rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pt-0 !pb-0 !pl-2.5 !pr-2.5 box-border text-right text-[0.938rem] text-[#27313c]">
-                    <div className="relative">250</div>
-                  </div>
+                  <input
+                    type="number"
+                    defaultValue={250}
+                    className="h-10 w-[9.813rem] rounded-[0.625rem] bg-[#f8f9f9] flex flex-col items-start justify-center !pl-2.5 !pr-2.5 box-border text-right text-[0.938rem] text-[#27313c]"
+                  />
                 </div>
               </div>
               <div className="self-stretch" />
