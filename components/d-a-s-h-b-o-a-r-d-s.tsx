@@ -1,62 +1,38 @@
-"use client";
 import type { NextPage } from "next";
-import Image from "next/image";
-import { useState } from "react";
 
 export type DASHBOARDSType = {
   className?: string;
 };
 
-const items = [
-  { title: "Veli", img: "/group-53-1.svg" },
-  { title: "Servis Şoförü", img: "/group-53-2.svg" },
-  { title: "Öğrenci", img: "/group-53-3.svg" },
-  { title: "Rehberlik", img: "/group-53-4.svg" },
-  { title: "Öğretmen", img: "/group-53-5.svg" },
-];
-
 const DASHBOARDS: NextPage<DASHBOARDSType> = ({ className = "" }) => {
-  const [index, setIndex] = useState(0);
-
-  const prev = () => setIndex((index - 1 + items.length) % items.length);
-  const next = () => setIndex((index + 1) % items.length);
-
   return (
     <section
-      className={`w-full max-w-[107rem] mx-auto h-[19.263rem] flex flex-col items-center justify-center relative z-[2] text-center text-[#000] font-[Poppins] ${className}`}
+      className={`w-[107rem] h-[19.263rem] flex flex-row items-start justify-start !pt-[1.188rem] !pb-[1.144rem] !pl-[13.563rem] !pr-[13.519rem] box-border relative z-[2] text-center text-[1.206rem] text-[#000] font-[Poppins] mq450:flex-col ${className}`}
     >
-      <div className="overflow-hidden w-full">
-        <div
-          className="flex transition-transform duration-500"
-          style={{ transform: `translateX(-${index * 100}%)` }}
-        >
-          {items.map(({ title, img }) => (
-            <div
-              key={title}
-              className="min-w-full flex flex-col items-center justify-center gap-4 px-4"
-            >
-              <div className="shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-md bg-white flex flex-col items-center justify-center gap-4 p-4">
-                <Image src={img} alt="" width={72} height={72} />
-                <div className="font-medium text-lg">{title}</div>
-              </div>
-            </div>
-          ))}
+      <section className="h-[14.213rem] w-full !!m-[0 important] absolute top-[2.5rem] right-[0rem] left-[0rem] flex flex-row items-center justify-between gap-0 z-[0] text-center text-[0.888rem] text-[#000] font-[Poppins] mq450:static mq450:flex-col mq450:items-center">
+        <div className="h-[14.213rem] w-[26.875rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.138rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.344rem] !pb-[0.969rem] !pl-[0.344rem] !pr-[0.344rem] box-border gap-[0.969rem]">
+          <div className="self-stretch h-[10.581rem] relative hidden" />
+          <div className="relative font-medium">Veli</div>
         </div>
+        <div className="w-[26.875rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.138rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.344rem] !pb-[0.969rem] !pl-[0.344rem] !pr-[0.344rem] box-border gap-[0.969rem]">
+          <div className="self-stretch h-[10.588rem] relative hidden" />
+          <div className="relative font-medium">Servis Şoförü</div>
+        </div>
+      </section>
+      <section className="h-[16.931rem] w-[79.919rem] flex flex-row items-center justify-between gap-0 z-[1] text-center text-[1.056rem] text-[#000] font-[Poppins] mq450:flex-col mq450:items-center">
+        <div className="h-[16.931rem] w-[32.031rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.163rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.413rem] !pb-[1.156rem] !pl-[0.413rem] !pr-[0.413rem] box-border gap-[1.156rem]">
+          <div className="self-stretch h-[12.619rem] relative hidden" />
+          <div className="relative font-medium">Öğrenci</div>
+        </div>
+        <div className="h-[16.931rem] w-[32.031rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.163rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.413rem] !pb-[1.156rem] !pl-[0.413rem] !pr-[0.413rem] box-border gap-[1.156rem]">
+          <div className="self-stretch h-[12.619rem] relative hidden" />
+          <div className="relative font-medium">Rehberlik</div>
+        </div>
+      </section>
+      <div className="h-full w-[36.444rem] !!m-[0 important] absolute top-[0rem] bottom-[0rem] left-[35.25rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.188rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.469rem] !pb-[1.319rem] !pl-[0.469rem] !pr-[0.469rem] box-border gap-[1.319rem] z-[2]">
+        <div className="self-stretch h-[14.356rem] relative hidden" />
+        <div className="relative font-medium">Öğretmen</div>
       </div>
-      <button
-        onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#5c67f7] text-white rounded-full w-8 h-8 flex items-center justify-center"
-        aria-label="Previous"
-      >
-        ‹
-      </button>
-      <button
-        onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#5c67f7] text-white rounded-full w-8 h-8 flex items-center justify-center"
-        aria-label="Next"
-      >
-        ›
-      </button>
     </section>
   );
 };
