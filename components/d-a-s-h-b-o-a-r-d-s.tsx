@@ -6,8 +6,6 @@ export type DASHBOARDSType = {
   className?: string;
 };
 
-const roles = ["Veli", "Servis Şoförü", "Öğrenci", "Rehberlik", "Öğretmen"];
-
 const DASHBOARDS: NextPage<DASHBOARDSType> = ({ className = "" }) => {
   const sliderRef = useRef<HTMLUListElement>(null);
 
@@ -37,10 +35,9 @@ const DASHBOARDS: NextPage<DASHBOARDSType> = ({ className = "" }) => {
     };
 
     const snapToCard = () => {
-      const card = slider.querySelector(`.${styles.card}`) as HTMLElement | null;
+      const card = slider.querySelector(`.${styles.slide}`) as HTMLElement | null;
       if (!card) return;
-      const style = getComputedStyle(slider);
-      const gap = parseInt(style.gap) || 0;
+      const gap = parseInt(getComputedStyle(slider).gap) || 0;
       const cardWidth = card.offsetWidth + gap;
       const index = Math.round(slider.scrollLeft / cardWidth);
       animateScroll(index * cardWidth);
@@ -86,11 +83,36 @@ const DASHBOARDS: NextPage<DASHBOARDSType> = ({ className = "" }) => {
     >
       <div className={styles.sliderContainer}>
         <ul className={styles.slider} ref={sliderRef}>
-          {roles.map((role) => (
-            <li key={role} className={styles.card}>
-              {role}
-            </li>
-          ))}
+          <li className={styles.slide}>
+            <div className="h-[14.213rem] w-[26.875rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.138rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.344rem] !pb-[0.969rem] !pl-[0.344rem] !pr-[0.344rem] box-border gap-[0.969rem]">
+              <div className="self-stretch h-[10.581rem] relative hidden" />
+              <div className="relative font-medium">Veli</div>
+            </div>
+          </li>
+          <li className={styles.slide}>
+            <div className="w-[26.875rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.138rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.344rem] !pb-[0.969rem] !pl-[0.344rem] !pr-[0.344rem] box-border gap-[0.969rem]">
+              <div className="self-stretch h-[10.588rem] relative hidden" />
+              <div className="relative font-medium">Servis Şoförü</div>
+            </div>
+          </li>
+          <li className={styles.slide}>
+            <div className="h-[16.931rem] w-[32.031rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.163rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.413rem] !pb-[1.156rem] !pl-[0.413rem] !pr-[0.413rem] box-border gap-[1.156rem]">
+              <div className="self-stretch h-[12.619rem] relative hidden" />
+              <div className="relative font-medium">Öğrenci</div>
+            </div>
+          </li>
+          <li className={styles.slide}>
+            <div className="h-[16.931rem] w-[32.031rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.163rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.413rem] !pb-[1.156rem] !pl-[0.413rem] !pr-[0.413rem] box-border gap-[1.156rem]">
+              <div className="self-stretch h-[12.619rem] relative hidden" />
+              <div className="relative font-medium">Rehberlik</div>
+            </div>
+          </li>
+          <li className={styles.slide}>
+            <div className="h-full w-[36.444rem] !!m-[0 important] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[0.188rem] bg-[#fff] flex flex-col items-center justify-center !pt-[0.469rem] !pb-[1.319rem] !pl-[0.469rem] !pr-[0.469rem] box-border gap-[1.319rem]">
+              <div className="self-stretch h-[14.356rem] relative hidden" />
+              <div className="relative font-medium">Öğretmen</div>
+            </div>
+          </li>
         </ul>
       </div>
     </section>

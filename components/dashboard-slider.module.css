@@ -2,10 +2,8 @@
   width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding: 0 50%;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  display: flex;
 }
 .sliderContainer::-webkit-scrollbar {
   display: none;
@@ -14,25 +12,15 @@
   display: flex;
   gap: 1rem;
   padding: 0 50%;
+  scroll-padding: 0 50%;
 }
-.card {
+.slide {
   flex: 0 0 auto;
-  width: 20rem;
-  height: 13.75rem;
-  background-color: var(--color-white);
-  border-radius: var(--br-5);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
   scroll-snap-align: center;
 }
 @media (max-width: 768px) {
   .slider {
     padding: 0 5%;
-  }
-  .card {
-    width: 90%;
+    scroll-padding: 0 5%;
   }
 }
