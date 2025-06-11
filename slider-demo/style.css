@@ -1,0 +1,60 @@
+/* Temel sıfırlama */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ececec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Kaydırıcı kapsayıcısı */
+.slider-container {
+  width: 100%;
+  overflow-x: auto;             /* Yatay kaydırma */
+  scroll-snap-type: x mandatory;/* Snap davranışı */
+  scroll-padding: 0 50%;        /* İlk/son elemanların ortalanabilmesi için */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;        /* Firefox'ta scrollbar gizleme */
+}
+.slider-container::-webkit-scrollbar {
+  display: none;                /* Diğer tarayıcılarda scrollbar gizleme */
+}
+
+/* Kartları tutan liste */
+.slider {
+  display: flex;
+  gap: 1rem;                    /* Kartlar arası boşluk */
+  padding: 0 50%;               /* Merkezde gösterme için boşluk */
+}
+
+/* Her bir kartın görünümü */
+.card {
+  flex: 0 0 auto;               /* Genişlik sabit, esneme yok */
+  width: 320px;
+  height: 220px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  scroll-snap-align: center;    /* Kart ortalanarak hizalansın */
+  transition: transform 0.35s ease-out;
+}
+
+/* Mobil görünüm: tek kart */
+@media (max-width: 768px) {
+  .slider {
+    padding: 0 5%;             /* Dar ekranda daha az boşluk */
+  }
+  .card {
+    width: 90%;                /* Kart genişliğini %90 yap */
+  }
+}
